@@ -35,6 +35,7 @@
     <link href="../../public/lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="../../public/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="../../public/lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
+    <link href="../../public/lib/datatables/jquery.dataTables.css" rel="stylesheet">
 
     <!-- Bracket CSS -->
     <link rel="stylesheet" href="../../public/css/bracket.css">
@@ -688,7 +689,33 @@
       </div>
 
       <div class="br-pagebody">
+        <div class="br-section-wrapper">
+          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Mantenimiento Producto</h6>
+          <p class="mg-b-25 mg-lg-b-50">Searching, ordering and paging goodness will be immediately added to the table, as shown in this example.</p>
 
+          <div class="table-wrapper">
+            <table id="datatable1" class="table display responsive nowrap">
+              <thead>
+                <tr>
+                  <th class="wd-15p">Nombre Producto</th>
+                  <th class="wd-15p">EDITAR</th>
+                  <th class="wd-20p">Eliminar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coca Cola 2L-Descartable</td>
+                  <td><div><i class="fa fa-pencil"></i></div></td>
+                  <td><div><i class="fa fa-trash"></i></div></td>
+                </tr>
+                <tr>
+                  <td>Agua Mineral 3L-Descartable</td>
+                  <td><div><i class="fa fa-pencil"></i></div></td>
+                  <td><div><i class="fa fa-trash"></i></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         <!-- start you own content here -->
 
       </div><!-- br-pagebody -->
@@ -704,7 +731,41 @@
     <script src="../../public/lib/jquery-ui/jquery-ui.js"></script>
     <script src="../../public/lib/jquery-switchbutton/jquery.switchButton.js"></script>
     <script src="../../public/lib/peity/jquery.peity.js"></script>
+    <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
+    <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
+  
 
     <script src="../../public/js/bracket.js"></script>
+
+      <script src="mntproducto.js"></script>
+
+      <script src="../js/bracket.js"></script>
+      
+      <!--
+      <script>
+      $(function(){
+        'use strict';
+
+        $('#datatable1').DataTable({
+          responsive: true,
+          language: {
+            searchPlaceholder: 'Search...',
+            sSearch: '',
+            lengthMenu: '_MENU_ items/page',
+          }
+        });
+
+        $('#datatable2').DataTable({
+          bLengthChange: false,
+          searching: false,
+          responsive: true
+        });
+
+        // Select2
+        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+
+      });
+    </script> 
+   -->
   </body>
 </html>

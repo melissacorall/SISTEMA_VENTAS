@@ -12,7 +12,7 @@
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 ]
             );
-            echo "conexion exitosa a la  base de datos";
+           // echo "conexion exitosa a la  base de datos";
             return $this->dbh;
             } catch(PDOException $e){
                 echo "Error BD:" . $e->getMessage();
