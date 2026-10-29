@@ -1,4 +1,4 @@
-<div id="modalmantenimiento" class="modal fade" data-backdrop="static">
+<div id="modalmantenimiento" class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <form method="post" id="producto_form">
